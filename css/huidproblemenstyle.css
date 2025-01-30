@@ -52,10 +52,13 @@ p {
 }
 
 p::first-letter {
-    font-size: 2em; /* Makes the first letter twice as large */
-    font-weight: bold; /* Makes it bold */
-    color: var(--accent-color); /* Uses the accent color */
-    margin-right: 4px; /* Adds spacing after the first letter */
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.hero > h1, .huid-title {
+    letter-spacing: 0.05em;
 }
 
 aside.cookies-message {
@@ -143,6 +146,7 @@ aside.cookies-message {
     position: fixed; /* New */
     bottom: 1rem;
     right: 1rem;
+    color: black;
 }
 
 .social-icons img {

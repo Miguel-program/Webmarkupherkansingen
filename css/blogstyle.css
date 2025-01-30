@@ -310,6 +310,7 @@ h3{
     position: fixed; /* New */
     bottom: 1rem;
     right: 1rem;
+    color: black;
 }
 
 .social-icons img {

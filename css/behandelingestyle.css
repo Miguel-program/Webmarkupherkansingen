@@ -193,8 +193,17 @@ aside.cookies-message {
     position: fixed; /* New */
     bottom: 1rem;
     right: 1rem;
+    color: black;
 }
 
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+}
 .social-icons img {
     width: 2rem;
     height: 2rem;
@@ -262,10 +271,6 @@ aside.cookies-message {
         gap: 1rem;
     }
 
-    .social-icons {
-        justify-content: center;
-        margin-bottom: 1rem;
-    }
 
     .cointainer-title {
         padding: 1.5rem;

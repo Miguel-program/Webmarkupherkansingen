@@ -82,6 +82,9 @@ aside.cookies-message {
     z-index: 9999; /* Ensures it is on top of everything */
 }
 
+.nothing {
+    display: none;
+}
 
 /* Styling the logo with figure and figcaption */
 .logo {
@@ -293,6 +296,7 @@ aside.cookies-message {
     position: fixed; /* New */
     bottom: 1rem;
     right: 1rem;
+    color: black;
 }
 
 .social-icons img {

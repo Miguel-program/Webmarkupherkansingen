@@ -75,6 +75,12 @@ aside.cookies-message {
     margin: 0;
 }
 
+p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
 .logo img {
     float: left;
     width: 3rem;
@@ -193,6 +199,11 @@ aside.cookies-message {
     position: fixed; /* New */
     bottom: 1rem;
     right: 1rem;
+    color: black;
+}
+
+.nothing, .price-product {
+    display: none;
 }
 
 .social-icons img {
