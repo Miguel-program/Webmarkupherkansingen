@@ -4,14 +4,14 @@ Student class: HAINF24VT1B
 GitHub Repository: https://github.com/Miguel-program/Webmarkupherkansingen
 GitHub Pages URL:
 
-Behandelingen:https://github.com/Miguel-program/Webmarkupherkansingen/blob/main/Behandelingen.html
+Behandelingen:https://miguel-program.github.io/Webmarkupherkansingen/Behandelingen.html
 
-Blog: https://github.com/Miguel-program/Webmarkupherkansingen/blob/main/Blog.html
+Blog: https://miguel-program.github.io/Webmarkupherkansingen/Blog.html
 
 Huidproblemen: https://github.com/Miguel-program/Webmarkupherkansingen/blob/main/Huidproblemen.html
 
-Huidverzorging: https://github.com/Miguel-program/Webmarkupherkansingen/blob/main/Huidverzorgingproducten.html
+Huidproducten: https://miguel-program.github.io/Webmarkupherkansingen/Huidverzorgingproducten.html
 
 contactpagina: https://github.com/Miguel-program/Webmarkupherkansingen/blob/main/contactpagina.html
 
-Homepage: https://github.com/Miguel-program/Webmarkupherkansingen/blob/main/index.html
+Homepage: https://miguel-program.github.io/Webmarkupherkansingen/
