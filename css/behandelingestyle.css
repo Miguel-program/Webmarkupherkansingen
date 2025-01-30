@@ -1,0 +1,306 @@
+:root {
+    --primary-color: #FAF3E0;
+    --secondary-color: #C1B2A1;
+    --accent-color: #D7B9C3;
+    --neutral-color-1: #FFFFFF;
+    --neutral-color-2: #5C4B45;
+    --font-size-h1: 3.8rem;
+    --font-size-h2: 3.1rem;
+    --font-size-h3: 2.4rem;
+    --font-size-h4: 1.9rem;
+    --font-size-h5: 1.6rem;
+    --font-size-h6: 1.25rem;
+    --font-size-h7: 0.88rem;
+    --font-size-h8: 0.56rem;
+    --font-size-mobile-h1: 1.5rem;
+    --font-size-mobile-h2: 1.2rem;
+    --font-size-mobile-h3: 0.94rem;
+    --font-size-mobile-h4: 0.69rem;
+    --font-size-mobile-h5: 0.56rem;
+    --font-size-mobile-h6: 0.44rem;
+    --table-border: 2px solid var(--accent-color);
+    --main-font:sans-serif;
+    --heading-font: "Montserrat", sans-serif;
+    --font-style: normal;
+    --font-weight: 400;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+html {
+    font-size: 16px; /* Set base font-size for easier scaling */
+}
+
+body {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--neutral-color-2);
+}
+
+aside.cookies-message {
+    position: fixed; /* Sticks to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--neutral-color-2);
+    color: var(--neutral-color-1);
+    text-align: center;
+    padding: 1em;
+    z-index: 9999; /* Ensures it is on top of everything */
+}
+
+/* Styling the logo with figure and figcaption */
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.logo img {
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.625rem; 
+}
+
+.logo figcaption {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--neutral-color-2);
+    text-transform: uppercase;
+}
+
+.nav-links {
+    float: right;
+    list-style: none;
+    display: flex;
+    gap: 1.875rem;
+}
+
+.nav-links a:visited {
+    color: darkgray; /* Change color of visited links */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--neutral-color-2);
+    font-size: 1rem;
+    letter-spacing: 0.03125rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+
+/* Verzorging title*/
+.cointainer-title {
+    padding: 2rem;
+    text-align: center;
+}
+
+.cointainer-title h1 {
+    font-size: 2.5rem; 
+    color: var(--neutral-color-2);
+    margin-bottom: 5rem;
+}
+/* article-title */ 
+.article-title > h2 {
+    display: none;
+}
+
+.article-title .item-title {
+    font-size: 1.2rem; 
+    line-height: 1.6;
+    color: var(--neutral-color-2);
+    max-width: 800px;
+    margin: 0 auto; 
+}
+/* Soorten Behandelinge */
+
+.soorten-behandelingen {
+    background-size: cover;
+    text-align: center;
+    padding: 2em 0;
+    color: var(--neutral-color-2);
+}
+
+.soorten-behandelingen > h1 {
+    font-size: var(--font-size-h3);
+    margin-top: 13rem;
+    margin-bottom: 5rem;
+}
+
+/*Behandelinge */
+.behandelingen {
+    padding: 0 10rem 0 10rem;
+}
+
+.behandelingen > h3 {
+    margin-top: 3rem;
+    font-size: var(--font-size-h4);
+}
+
+.behandelingen > img{
+    width: 10em;
+    height: 10em;
+    margin-top: 2rem; 
+}
+
+.behandelingen > figcaption{
+    font-size: var(--font-size-h6);
+    background-position: center;
+    text-align: left;
+    margin-top: 2.5rem;
+    padding: 0 20rem 0 20rem;
+}
+
+.article-behandelingen {
+    justify-content: center;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    position: fixed; /* New */
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.social-icons img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links strong {
+    font-size: 1.125rem;
+    color: var(--neutral-color-2);
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--neutral-color-2);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer Logo */
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo figcaption {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--neutral-color-2);
+}
+
+/* Responsive Design */
+@media (max-width: 48em) { 
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.9375rem; 
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .cointainer-title {
+        padding: 1.5rem;
+    }
+    
+    .cointainer-title h1 {
+        font-size: 1.8rem; 
+        padding: 0;
+    }
+    
+    .article-title .item-title {
+        font-size: 1rem;
+        padding: 0 1rem; 
+    }
+
+    .behandelingen {
+        padding: 0 2rem;
+    }
+
+    .behandelingen > img {
+        width: 8em;
+        height: 8em; 
+    }
+
+    .behandelingen > figcaption {
+        padding: 0 1rem; 
+    }
+
+    /* Stack items in the article section */
+    .article-behandelingen {
+        flex-direction: column; 
+        padding: 0 1rem; 
+    }
+
+    .footer-links {
+        gap: 1rem; 
+    }
+}

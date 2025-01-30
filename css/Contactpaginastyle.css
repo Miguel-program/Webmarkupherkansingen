@@ -1,0 +1,361 @@
+:root {
+    --primary-color: #FAF3E0;
+    --secondary-color: #C1B2A1;
+    --accent-color: #D7B9C3;
+    --neutral-color-1: #FFFFFF;
+    --neutral-color-2: #5C4B45;
+    --font-size-h1: 3.8rem;
+    --font-size-h2: 3.1rem;
+    --font-size-h3: 2.4rem;
+    --font-size-h4: 1.9rem;
+    --font-size-h5: 1.6rem;
+    --font-size-h6: 1.25rem;
+    --font-size-h7: 0.88rem;
+    --font-size-h8: 0.56rem;
+    --font-size-mobile-h1: 1.5rem;
+    --font-size-mobile-h2: 1.2rem;
+    --font-size-mobile-h3: 0.94rem;
+    --font-size-mobile-h4: 0.69rem;
+    --font-size-mobile-h5: 0.56rem;
+    --font-size-mobile-h6: 0.44rem;
+    --table-border: 2px solid var(--accent-color);
+    --main-font:sans-serif;
+    --heading-font: "Montserrat", sans-serif;
+    --font-style: normal;
+    --font-weight: 400;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+html {
+    font-size: 16px; /* Set base font-size for easier scaling */
+}
+
+body {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--neutral-color-2);
+}
+p {
+    text-indent: 1.5em; /* Indents first line of each paragraph */
+    line-height: 1.6em;
+    word-spacing: 0.15em;
+}
+
+p::first-letter {
+    font-size: 2em; /* Makes the first letter twice as large */
+    font-weight: bold; /* Makes it bold */
+    color: var(--accent-color); /* Uses the accent color */
+    margin-right: 4px; /* Adds spacing after the first letter */
+}
+
+aside.cookies-message {
+    position: fixed; /* Sticks to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--neutral-color-2);
+    color: var(--neutral-color-1);
+    text-align: center;
+    padding: 1em;
+    z-index: 9999; /* Ensures it is on top of everything */
+}
+
+/* Styling the logo with figure and figcaption */
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.logo img {
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.625rem; 
+}
+
+.logo figcaption {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--neutral-color-2);
+    text-transform: uppercase;
+}
+
+.nav-links {
+    float: right;
+    list-style: none;
+    display: flex;
+    gap: 1.875rem;
+}
+
+.nav-links a:visited {
+    color: darkgray; /* Change color of visited links */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--neutral-color-2);
+    font-size: 1rem;
+    letter-spacing: 0.03125rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+    background-size: cover;
+    color: var(--neutral-color-2);
+    padding: 8em 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: var(--font-size-h3);
+}
+
+.hero  p {
+    padding-top: 10em;
+    text-align: center;
+}
+
+/*formuler */
+h3 {
+    font-size: var(--font-size-h4);
+    background-size: cover;
+    color: var(--neutral-color-2);
+    padding: 8em 0;
+    text-align: center;
+}
+h4{
+    text-align: center;
+    color: var(--neutral-color-2);
+    font-size: var(--font-size-h6);
+    padding-bottom: 2em;
+}
+
+form {
+    border: 0.1em solid #ccc;
+    padding: 2em;
+    width: 25em;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+form label {
+    display: flex;
+    margin-top: 2em;
+}
+
+form input, 
+form select, 
+form textarea {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+form button {
+    background-color: var(--secondary-color);
+    color: var(--neutral-color-2);
+    padding: 0.8em;
+    margin-top: 1.5em;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 1em;
+    border-color: var(--neutral-color-2);
+}
+
+form button:hover {
+    background-color: var(--accent-color);
+}
+
+/*Veelgester vragen*/
+
+.stats-container {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+    color: var(--neutral-color-2);
+}
+
+.stat-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.faq-item,
+.faq-question,
+.faq-cointainer {
+    margin:0 0 1em 0;
+    color: var(--neutral-color-2);
+}
+
+.faq-question {
+    font-weight: bold;
+    margin-bottom: 0.25em;
+    font-size: 1.1em;  
+}
+
+/* Last-one*/
+
+.last-one {
+    margin:15em 2em 15em 0;
+    color: var(--neutral-color-2);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    position: fixed; /* New */
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.social-icons img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links strong {
+    font-size: 1.125rem;
+    color: var(--neutral-color-2);
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--neutral-color-2);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer Logo */
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo figcaption {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--neutral-color-2);
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 48em) {
+    :root {
+        --font-size-h1: var(--font-size-mobile-h1);
+        --font-size-h2: var(--font-size-mobile-h2);
+        --font-size-h3: var(--font-size-mobile-h3);
+        --font-size-h4: var(--font-size-mobile-h4);
+        --font-size-h5: var(--font-size-mobile-h5);
+        --font-size-h6: var(--font-size-mobile-h6);
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 1.5em;
+    }
+
+    .faq-item, .faq-question {
+        font-size: 1rem;
+    }
+
+    .last-one {
+        margin: 2em 0;
+        font-size: 1.125rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    form {
+        width: 100%;
+        padding: 1.5em;
+    }
+
+    .hero, h3 {
+        padding: 4em 0;
+        font-size: var(--font-size-mobile-h1);
+    }
+}

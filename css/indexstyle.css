@@ -18,25 +18,25 @@
     --font-size-mobile-h4: 0.69rem;
     --font-size-mobile-h5: 0.56rem;
     --font-size-mobile-h6: 0.44rem;
-    --table-border: 0.125rem  solid var(--accent-color);
-    --heading-font: font-family: "Montserrat", sans-serif;
+    --table-border: 2px solid var(--accent-color);
+    --main-font:sans-serif;
+    --heading-font: "Montserrat", sans-serif;
     --font-style: normal;
     --font-weight: 400;
-    --tex-uppercase: uppercase;
 
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--heading-font);
+    font-family: var(--main-font);
 }
 html {
-    font-size: 1rem; /* Set base font-size for easier scaling */
+    font-size: 16px; /* Set base font-size for easier scaling */
 }
 
 body {
-    font-family: var(--heading-font);
+    font-family: var(--main-font);
     margin: 0;
     padding: 0;
     background-color: var(--primary-color);
@@ -58,21 +58,30 @@ footer {
 }
 
 p {
-    text-indent: 1.5em;
+    text-indent: 1.5em; /* Indents first line of each paragraph */
     line-height: 1.6em;
     word-spacing: 0.15em;
-    
 }
 
-h1, h2, h3, h4, h5, h6 {
-    line-height: 1.3em;
-    letter-spacing: 0.2em;
-    text-transform: var(--tex-uppercase);
+p::first-letter {
+    font-size: 2em; /* Makes the first letter twice as large */
+    font-weight: bold; /* Makes it bold */
+    color: var(--accent-color); /* Uses the accent color */
+    margin-right: 4px; /* Adds spacing after the first letter */
 }
 
-h2 {
-    word-spacing: 0.25em;
+aside.cookies-message {
+    position: fixed; /* Sticks to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--neutral-color-2);
+    color: var(--neutral-color-1);
+    text-align: center;
+    padding: 1em;
+    z-index: 9999; /* Ensures it is on top of everything */
 }
+
 
 /* Styling the logo with figure and figcaption */
 .logo {
@@ -82,6 +91,7 @@ h2 {
 }
 
 .logo img {
+    float: left;
     width: 3rem;
     height: 3rem;
     margin-right: 0.625rem; 
@@ -95,6 +105,7 @@ h2 {
 }
 
 .nav-links {
+    float: right;
     list-style: none;
     display: flex;
     gap: 1.875rem;
@@ -104,27 +115,20 @@ h2 {
     display: inline;
 }
 
-.nav-links a, .footer-links a {
+.nav-links a {
     text-decoration: none;
     color: var(--neutral-color-2);
     font-size: 1rem;
-    letter-spacing: 0.04rem;
+    letter-spacing: 0.03125rem;
     transition: color 0.3s ease;
 }
 
-.nav-links a:visited, .footer-links a:visited {
-    color: darkgray;
-}
-
-.nav-links a:active, .footer-links a:active {
-    color: green;
-}
-
-.nav-links a:hover, .footer-links a:hover {
+.nav-links a:hover {
     color: var(--accent-color);
-    text-decoration: underline;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:visited {
+    color: darkgray; /* Change color of visited links */
 }
 
 /*Head pic*/
@@ -142,6 +146,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .hero > figure > img {
@@ -187,7 +192,6 @@ h2 {
 .skincare-importance > h2 {
     font-size: var(--font-size-h2);
     margin: 1em;
-    letter-spacing: 0.2em;
 }
 
 /* Skincare Tips Section */
@@ -225,7 +229,7 @@ h2 {
 .tip-item img {
     width: 15em;
     height: 15em;
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
 } 
 
 /* Skincare andere Tips Section */
@@ -286,26 +290,15 @@ h2 {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
-}
-
-.social-icons a:hover img {
-    transform: scale(1.2); /* Slightly enlarges the icons */
-    transition: transform 0.3s ease-in-out;
+    position: fixed; /* New */
+    bottom: 1rem;
+    right: 1rem;
 }
 
 .social-icons img {
     width: 2rem;
     height: 2rem;
 }
-
-/* Buttons - Hover Effect */
-.button:hover {
-    background-color: var(--accent-color);
-    color: var(--neutral-color-1);
-    border: 0.125rem solid var(--neutral-color-2);
-    transition: all 0.3s ease-in-out;
-}
-
 
 /* Footer Links */
 .footer-links {
@@ -328,6 +321,17 @@ h2 {
     color: var(--neutral-color-2);
 }
 
+.footer-links a {
+    text-decoration: none;
+    color: var(--neutral-color-2);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
 /* Footer Logo */
 .footer-logo {
     text-align: center;
@@ -341,7 +345,8 @@ h2 {
 }
 
 /* Responsive Design */
-@media (max-width: 48em) { 
+@media (max-width: 48em) { /* 768px equivalent */
+
     /* General Body Padding */
     body {
         padding: 0.5em;

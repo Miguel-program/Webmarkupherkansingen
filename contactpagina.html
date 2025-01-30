@@ -1,59 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl"> <!-- Change lang attribute to nl -->
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Miguel Angel">
+    <meta name="description" content="Neem contact met ons op voor persoonlijk huidverzorgingsadvies, behandelboekingen of vragen. Onze experts staan ​​klaar om u te helpen met professionele begeleiding en aanbevelingen. Vul ons contactformulier in of neem vandaag nog contact met ons op via telefoon of e-mail!">
+    <meta name="keywords" content="RadiantEssence, skincare, beauty, treatments, blog, contact">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Miguel Angel Web Design / Web Markup">
-    <meta name="description" content="Discover delicious recipes, cooking tips, and meal ideas for every occasion. Learn how to make your favorite dishes with our step-by-step guides.">
-    <meta name="keywords" content="huid, beauty, page, recommendation, best">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contactpagina</title>
+    <link rel="stylesheet" href="css/Contactpaginastyle.css" type="text/css">
+    <link rel="icon" href="img/9cff8f3db808e313619d4ae630f32a95-(1).png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <!-- nav -->
+    <nav id="mainmenu">          
+        <figure class="logo">
+            <a href="index.html"><img src="img/9cff8f3db808e313619d4ae630f32a95-(1).png" alt="RadiantEssence Logo" title="Ga terug naar de homepage"></a>
+        </figure>
+        <ul class="nav-links">
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="Huidverzorgingproducten.html">Huidverzorgingproducten</a></li>
+            <li><a href="Behandelingen.html">Behandelingen</a></li>
+            <li><a href="Huidproblemen.html">Huidproblemen</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Contactpagina.html">Contactpagina</a></li>
+        </ul>
+    </nav>  
 
-    </nav>
-    <figure>
-        <img src="img/image" alt="hoofdafbeelding" title="hoofdafbeelding">
-        <figcaption>Hello Welkom</figcaption>
-    </figure>
-    <header>
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!--Contact us-->
+    <header class="hero">
+        <h1><strong>Neem Contact met Ons Op</strong></h1>
+        <p>Heb je vragen over onze producten, behandelingen of huidverzorging in het algemeen? 
+            Ons team van huidexperts staat klaar om je te helpen. Of je nu persoonlijk advies wilt, meer wilt weten over onze diensten, 
+            of een afspraak wilt maken, we horen graag van je!</p>
     </header>
-    <article>
 
-    </article>
-    <aside>
+    <!--formuler-->
+    <h2>Hoe kun je ons bereiken?</h2>
+    <form action="#" method="post">
+        <fieldset>
+        <legend>Contact Formulier</legend>
+        <label for="aanhef">Aanhef: *</label>
+        <select id="aanhef" name="aanhef" required>
+            <option value="">Selecteer</option>
+            <option value="Dhr.">Dhr.</option>
+            <option value="Mevr.">Mevr.</option>
+            <option value="Voorkeur niet opgeven">Voorkeur niet opgeven</option>
+        </select>
+        
+        <label for="naam">Naam: *</label>
+        <input type="text" id="naam" name="naam" required>
+    
+        <label for="email">E-mailadres: *</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="telefoon">Telefoonnummer:</label>
+        <input type="tel" id="telefoon" name="telefoon">
+    
+        <label for="vraag">Vraag of Verzoek: *</label>
+        <textarea id="vraag" name="vraag" required></textarea>
+    
+        <button type="submit">Verzenden</button>
+    </fieldset>
+    </form>
 
+    <!--Meestal vragen-->
+    <aside class="cookies-message">
+        Deze website gebruikt cookies om de gebruikerservaring te verbeteren. 
+        <a href="#">Meer informatie</a>
+        <button id="accept-cookies">Akkoord</button>
     </aside>
-    <section>
-        <form>
-            <fieldset>
-              <legend>Persoonlijke Informatie</legend>
-              <label for="name">Naam:</label>
-              <input type="text" id="name" name="name"><br><br>
-          
-              <label for="email">E-mailadres:</label>
-              <input type="email" id="email" name="email">
-            </fieldset>
-          
-            <fieldset>
-              <legend>Voorkeuren</legend>
-              <label>
-                <input type="checkbox" name="preference" value="nieuwsbrief">
-                Nieuwsbrief ontvangen
-              </label><br>
-              <label>
-                <input type="checkbox" name="preference" value="updates">
-                Productupdates ontvangen
-              </label>
-            </fieldset>
-          
-            <button type="submit">Verzenden</button>
-          </form>
-    </section>    
-    <footer>
-        &copy;
+    <h3 class="title">Veelgestelde Vragen</h3>
+
+    <main class="faq-container">
+        <article class="faq-item">
+            <h2 class="faq-question">Hoe lang duurt het voordat ik een <em>reactie</em> krijg?</h2>
+            <p class="faq-answer">We streven ernaar om binnen 24 uur te reageren op e-mails en berichten die via het contactformulier worden verzonden.</p>
+        </article>
+
+        <article class="faq-item">
+            <h2 class="faq-question">Kan ik een afspraak maken voor een <em>huidanalyse?</em></h2>
+            <p class="faq-answer">Ja! We bieden gratis huidanalyses aan in onze salon. Neem contact op via het formulier of telefonisch om een afspraak te maken.</p>
+        </article>
+
+        <article class="faq-item">
+            <h2 class="faq-question">Wat als ik niet zeker weet welke <em>behandeling</em> het beste voor mij is?</h2>
+            <p class="faq-answer">Geen zorgen, ons team staat voor je klaar om je te adviseren. Vul het contactformulier in of bel ons, en we helpen je graag met het kiezen van de juiste behandeling.</p>
+        </article>
+
+        <p class="last-one">"Heb je een specifieke vraag of wil je direct een afspraak maken? Vul het contactformulier in en we nemen zo snel mogelijk contact met je op!</p>
+    </main> <!-- Close main element -->
+
+    <!-- Footer -->
+    <footer id="company_footer">
+        <section class="social-icons">
+            <h2>Volg Ons op Sociale Media</h2>
+            <a href="#"><img src="img/icon_facebook.png" alt="Facebook" title="Volg ons op Facebook"></a>
+    <a href="#"><img src="img/icon_instagram.png" alt="Instagram" title="Volg ons op Instagram"></a>
+    <a href="#"><img src="img/icon_youtube.png" alt="YouTube" title="Bekijk onze video's op YouTube"></a>
+    <a href="#"><img src="img/icon_linkedin.png" alt="LinkedIn" title="Verbind met ons op LinkedIn"></a>
+        </section>
+        <nav class="footer-links">
+            <ul>
+                <li class="section-title"><a href="index.html">HomePage</a></li>
+                <li><a href="Huidverzorgingproducten.html">Huidverzorgingproducten</a></li>
+                <li><a href="Huidproblemen.html">Huidproblemen</a></li>
+            </ul>
+            <ul>
+                <li class="section-title">Explore</li>
+                <li><a href="Contactpagina.html">Contactpagina</a></li>
+                <li><a href="Behandelingen.html">Behandelingen</a></li>
+            </ul>
+            <ul>
+                <li class="section-title">Resources</li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        
+        <figure class="footer-logo">
+            <figcaption>RADIANTESSENCE</figcaption>
+            <p>&copy; RADIANTESSENCE</p>
+        </figure>
     </footer>
 </body>
 </html>

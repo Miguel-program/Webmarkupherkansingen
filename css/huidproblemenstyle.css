@@ -1,0 +1,239 @@
+:root {
+    --primary-color: #FAF3E0;
+    --secondary-color: #C1B2A1;
+    --accent-color: #D7B9C3;
+    --neutral-color-1: #FFFFFF;
+    --neutral-color-2: #5C4B45;
+    --font-size-h1: 3.8rem;
+    --font-size-h2: 3.1rem;
+    --font-size-h3: 2.4rem;
+    --font-size-h4: 1.9rem;
+    --font-size-h5: 1.6rem;
+    --font-size-h6: 1.25rem;
+    --font-size-h7: 0.88rem;
+    --font-size-h8: 0.56rem;
+    --font-size-mobile-h1: 1.5rem;
+    --font-size-mobile-h2: 1.2rem;
+    --font-size-mobile-h3: 0.94rem;
+    --font-size-mobile-h4: 0.69rem;
+    --font-size-mobile-h5: 0.56rem;
+    --font-size-mobile-h6: 0.44rem;
+    --table-border: 2px solid var(--accent-color);
+    --main-font:sans-serif;
+    --heading-font: "Montserrat", sans-serif;
+    --font-style: normal;
+    --font-weight: 400;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+p {
+    text-indent: 1.5em; /* Indents first line of each paragraph */
+    line-height: 1.6em;
+    word-spacing: 0.15em;
+}
+
+p::first-letter {
+    font-size: 2em; /* Makes the first letter twice as large */
+    font-weight: bold; /* Makes it bold */
+    color: var(--accent-color); /* Uses the accent color */
+    margin-right: 4px; /* Adds spacing after the first letter */
+}
+
+aside.cookies-message {
+    position: fixed; /* Sticks to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--neutral-color-2);
+    color: var(--neutral-color-1);
+    text-align: center;
+    padding: 1em;
+    z-index: 9999; /* Ensures it is on top of everything */
+}
+
+.logo img {
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.625rem;
+}
+
+.nav-links {
+    float: right;
+    list-style: none;
+    display: flex;
+    gap: 1.875rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--neutral-color-2);
+    font-size: 1rem;
+}
+
+.nav-links a:visited {
+    color: darkgray; /* Change color of visited links */
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    color: var(--neutral-color-2);
+    padding: 6em 1em;
+    text-align: center;
+}
+
+.hero > h1 {
+    font-size: var(--font-size-h1);
+}
+
+.hero > p {
+    font-size: var(--font-size-h5);
+    margin-top: 2em;
+}
+
+/* Huidproblemen Section */
+.huid-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    padding: 2em;
+}
+
+.huid-title {
+    color: var(--neutral-color-2);
+    font-size: var(--font-size-h4);
+    text-align: center;
+}
+
+.detail {
+    text-align: center;
+}
+
+.detail > img {
+    width: 100%;
+    max-width: 15em;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    position: fixed; /* New */
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.social-icons img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links strong {
+    font-size: 1.125rem;
+    color: var(--neutral-color-2);
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--neutral-color-2);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer Logo */
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo figcaption {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--neutral-color-2);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 3em 1em;
+    }
+
+    .hero > h1 {
+        font-size: var(--font-size-h2);
+    }
+
+    /* Huidproblemen Section */
+    .huid-block {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .huid-title, .huid-text {
+        padding: 1rem;
+    }
+
+    .detail img {
+        max-width: 12em;
+    }
+
+    /* Footer */
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,425 @@
+:root {
+    --primary-color: #FAF3E0;
+    --secondary-color: #C1B2A1;
+    --accent-color: #D7B9C3;
+    --neutral-color-1: #FFFFFF;
+    --neutral-color-2: #5C4B45;
+    --font-size-h1: 3.8rem;
+    --font-size-h2: 3.1rem;
+    --font-size-h3: 2.4rem;
+    --font-size-h4: 1.9rem;
+    --font-size-h5: 1.6rem;
+    --font-size-h6: 1.25rem;
+    --font-size-h7: 0.88rem;
+    --font-size-h8: 0.56rem;
+    --font-size-mobile-h1: 1.5rem;
+    --font-size-mobile-h2: 1.2rem;
+    --font-size-mobile-h3: 0.94rem;
+    --font-size-mobile-h4: 0.69rem;
+    --font-size-mobile-h5: 0.56rem;
+    --font-size-mobile-h6: 0.44rem;
+    --table-border: 2px solid var(--accent-color);
+    --main-font:sans-serif;
+    --heading-font: "Montserrat", sans-serif;
+    --font-style: normal;
+    --font-weight: 400;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
+html {
+    font-size: 16px; /* Set base font-size for easier scaling */
+}
+
+body {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--neutral-color-2);
+}
+
+p {
+    text-indent: 1.5em; /* Indents first line of each paragraph */
+    line-height: 1.6em;
+    word-spacing: 0.15em;
+}
+
+p::first-letter {
+    font-size: 2em; /* Makes the first letter twice as large */
+    font-weight: bold; /* Makes it bold */
+    color: var(--accent-color); /* Uses the accent color */
+    margin-right: 4px; /* Adds spacing after the first letter */
+}
+
+aside.cookies-message {
+    position: fixed; /* Sticks to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--neutral-color-2);
+    color: var(--neutral-color-1);
+    text-align: center;
+    padding: 1em;
+    z-index: 9999; /* Ensures it is on top of everything */
+}
+
+/* Styling the logo with figure and figcaption */
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.logo img {
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.625rem; 
+}
+
+.logo figcaption {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--neutral-color-2);
+    text-transform: uppercase;
+}
+
+.nav-links {
+    float: right;
+    list-style: none;
+    display: flex;
+    gap: 1.875rem;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a:visited {
+    color: darkgray; /* Change color of visited links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--neutral-color-2);
+    font-size: 1rem;
+    letter-spacing: 0.03125rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+
+
+/* title blog*/
+h1{
+    color: var(--neutral-color-2);
+    text-align: center;
+    font-size: var(--font-size-h1);
+    padding-top: 2.5em;
+}
+h3{
+    color: var(--neutral-color-2);
+    text-align: center;
+    font-size: var(--font-size-h3);
+    padding-top: 2.5em; 
+}
+
+/* Categorieen*/
+.categorie {
+    background-color: var(--primary-color);
+    background-size: cover;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.categorie > h2 {
+    color: var(--neutral-color-2);
+    font-size: var(--font-size-h4);
+    background-position: center;
+    text-align: center;
+    padding-bottom: 5em;
+    padding-top: 5em;
+}
+
+.categorie-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    background-color: var(--primary-color);
+}
+
+.categorie-item {
+    padding: 10em 0 10em 0;
+    width: 20em;
+    text-align: center;
+    color: var(--neutral-color-2);
+    border: 2px solid var(--secondary-color);
+    margin: 2rem;
+}
+
+/* This is the extra 2 block*/
+.categorie-1 {
+    background-color: var(--primary-color);
+    background-size: cover;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.categorie-1 > h2 {
+    color: var(--neutral-color-2);
+    font-size: var(--font-size-h4);
+    background-position: center;
+    text-align: center;
+    padding-bottom: 5em;
+    padding-top: 5em;
+}
+
+.categorie-grid-1 {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    background-color: var(--primary-color);
+}
+
+.categorie-item-1 {
+    padding: 10em 0 10em 0;
+    width: 20em;
+    text-align: center;
+    color: var(--neutral-color-2);
+    border: 2px solid var(--secondary-color);
+    padding: 2rem;
+    margin: 2rem;
+}
+.categorie-grid-1 > h3 {
+    display: none;
+}
+.categorie-grid > h3 {
+    display: none;
+}
+
+.categorie > h2 {
+    display: none;
+}
+
+
+
+/*Artikelen */
+.huidproducten-header {
+    background-size: cover;
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+}
+
+.huidproducten-header > article {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+.article-2{
+    width: 45em;
+    height: auto;
+    margin-left: 25em;
+}
+.article-1 {
+    width: 45em;
+    height: auto;
+    margin-left: 25em;
+}
+.article-3 {
+    width: 45em;
+    height: auto;
+    margin-left: 25em;
+}
+
+
+.article-1 > h2 {
+    display: none;
+}
+
+.article-2 > h2 {
+    display: none;
+}
+
+.article-3 > h2 {
+    display: none;
+}
+
+.producten-item {
+    padding: 10em 0 10em 0;
+    text-align: center;
+    color: var(--neutral-color-2);
+    border: 2px solid var(--secondary-color);
+    padding: 2rem;
+    margin: 2rem;
+}
+.producten-item figcaption{
+    padding: 2em 10em 2em 10em;
+}
+.producten-item img {
+    width: 10em;
+    height: 10em;
+}
+
+.producten-item h3 {
+    padding: 0 2rem 0 2rem;
+}
+
+.huidproducten-header > article {
+    background-color: var(--primary-color);
+    color: var(--neutral-color-2);
+}
+
+.huidproucten-item > p {
+    font-size: var(--font-size-h6);
+    background-position: center;
+    text-align: left;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    position: fixed; /* New */
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.social-icons img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links strong {
+    font-size: 1.125rem;
+    color: var(--neutral-color-2);
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--neutral-color-2);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer Logo */
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo figcaption {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--neutral-color-2);
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 48em) { 
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.9375rem; 
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    /* Adjusting font sizes for smaller screens */
+    h1 {
+        font-size: var(--font-size-mobile-h1);
+    }
+
+    h3 {
+        font-size: var(--font-size-mobile-h3);
+    }
+
+    /* Category items to stack vertically on mobile */
+    .categorie-grid, .categorie-grid-1 {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .categorie-item, .categorie-item-1 {
+        width: auto;
+        padding: 2em 0;
+        margin: 1em 0;
+    }
+
+    /* Products/articles layout for mobile */
+    .huidproducten-header > article {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .article-1, .article-2 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .producten-item {
+        padding: 3em 0;
+    }
+    .producten-item figcaption{
+        padding: 2em 2em 2em 2em;
+    }
+}
