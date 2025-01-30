@@ -1,0 +1,15 @@
+Student name: Miguel Angel Dominguez Romero
+Student number: 734673
+Student class: HAINF24VT1B
+GitHub Repository: https://github.com/Miguel-program/Webmarkupherkansingen
+GitHub Pages URL:
+
+FAQ: https://github.com/Miguel-program/Webmarkupherkansingen/blob/main/FAQ.html
+
+Allergieen: https://github.com/Miguel-program/Webmarkupherkansingen/blob/main/allergieen.html
+
+Conctactpagina: https://github.com/Miguel-program/Webmarkupherkansingen/blob/main/contactpagina.html
+
+Homepage: https://github.com/Miguel-program/Webmarkupherkansingen/blob/main/homepage.html
+
+Huidtype: https://github.com/Miguel-program/Webmarkupherkansingen/blob/main/huidtypes.html
