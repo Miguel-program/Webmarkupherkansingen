@@ -12,6 +12,6 @@ Huidproblemen: https://github.com/Miguel-program/Webmarkupherkansingen/blob/main
 
 Huidproducten: https://miguel-program.github.io/Webmarkupherkansingen/Huidverzorgingproducten.html
 
-contactpagina: https://github.com/Miguel-program/Webmarkupherkansingen/blob/main/contactpagina.html
+contactpagina: https://miguel-program.github.io/Webmarkupherkansingen/Contactpagina.html
 
 Homepage: https://miguel-program.github.io/Webmarkupherkansingen/
